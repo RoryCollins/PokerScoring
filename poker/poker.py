@@ -5,7 +5,8 @@ from poker.strategy import *
 def score(player_one, player_two):
     hand_one = Hand(player_one)
     hand_two = Hand(player_two)
-    strategies = [Straight, ThreeOfAKind, TwoPair, Pair, HighestCard]
+    strategies = [RoyalFlush, StraightFlush, FourOfAKind, FullHouse, Flush, Straight, ThreeOfAKind, TwoPair, Pair,
+                  HighestCard]
 
     for strategy in strategies:
         player_one_score = strategy.score(hand_one)
