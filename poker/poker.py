@@ -1,5 +1,5 @@
-from card import Hand
-from strategy import Pair, HighestCard, TwoPair, ThreeOfAKind, Straight
+from poker.hand import Hand
+from poker.strategy import *
 
 
 def score(player_one, player_two):

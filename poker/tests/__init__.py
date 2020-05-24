@@ -1,1 +1,1 @@
-from tests.test_poker import *
+from poker.tests.test_poker import *

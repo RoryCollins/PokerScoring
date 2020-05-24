@@ -1,6 +1,6 @@
 import pytest
 
-from card import Card
+from poker.card import Card
 
 
 def test_card_translates_regular_card():

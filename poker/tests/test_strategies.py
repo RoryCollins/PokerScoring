@@ -1,7 +1,7 @@
 import pytest
 
-from card import Hand
-from strategy import *
+from poker.hand import Hand
+from poker.strategy import *
 
 
 @pytest.mark.parametrize("hand, score", [
