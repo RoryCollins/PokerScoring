@@ -14,6 +14,7 @@ def test_card_translates_regular_card():
     ("QS", "S", 12),
     ("KH", "H", 13),
     ("AC", "C", 14),
+    ("TS", "S", 10)
 ])
 def test_card_translates_face_card(face_card, suit, rank):
     card = Card(face_card)

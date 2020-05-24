@@ -1,2 +1,1 @@
-from poker.poker import score
-
+from poker.poker import play

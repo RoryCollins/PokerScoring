@@ -5,6 +5,8 @@ class Card:
 
     @staticmethod
     def __value(card):
+        if card == "T":
+            return 10
         if card == "J":
             return 11
         if card == "Q":

@@ -9,7 +9,7 @@ from poker.strategy import *
     ("5D 2S 7H 8S KD", 0)
 ])
 def test_pair(hand, score):
-    hand = Hand(hand)
+    hand = Hand(hand.split(" "))
     assert Pair.score(hand) == score
 
 
@@ -18,7 +18,7 @@ def test_pair(hand, score):
     ("5D 6S 7H 8S 5D", 0)
 ])
 def test_straight(hand, score):
-    hand = Hand(hand)
+    hand = Hand(hand.split(" "))
     assert Straight.score(hand) == score
 
 
@@ -27,7 +27,7 @@ def test_straight(hand, score):
     ("5D 6S 7H 8S 5D", 0)
 ])
 def test_flush(hand, score):
-    hand = Hand(hand)
+    hand = Hand(hand.split(" "))
     assert Flush.score(hand) == score
 
 
@@ -36,7 +36,7 @@ def test_flush(hand, score):
     ("5D 6S 7H 8S 5D", 0)
 ])
 def test_full_house(hand, score):
-    hand = Hand(hand)
+    hand = Hand(hand.split(" "))
     assert FullHouse.score(hand) == score
 
 
@@ -45,7 +45,7 @@ def test_full_house(hand, score):
     ("5D 6S 7H 5S 5D", 0)
 ])
 def test_four_of_a_kind(hand, score):
-    hand = Hand(hand)
+    hand = Hand(hand.split(" "))
     assert FourOfAKind.score(hand) == score
 
 
@@ -54,7 +54,7 @@ def test_four_of_a_kind(hand, score):
     ("5S 6S 7S 8S 9S", 9),
 ])
 def test_straight_flush(hand, score):
-    hand = Hand(hand)
+    hand = Hand(hand.split(" "))
     assert StraightFlush.score(hand) == score
 
 
@@ -63,5 +63,5 @@ def test_straight_flush(hand, score):
     ("JS AS KS QS 10S", 14),
 ])
 def test_royal_flush(hand, score):
-    hand = Hand(hand)
+    hand = Hand(hand.split(" "))
     assert RoyalFlush.score(hand) == score
